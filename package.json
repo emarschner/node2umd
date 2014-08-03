@@ -1,0 +1,13 @@
+{
+  "name": "node2umd",
+  "version": "1.0.0",
+  "description": "A nothing-fancy tool to convert node-style module files into UMD module files.",
+  "main": "index.js",
+  "author": "emarschner@gmail.com",
+  "license": "ISC",
+  "bin": "index.js",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/emarschner/node2umd"
+  }
+}
