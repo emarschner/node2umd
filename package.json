@@ -6,8 +6,8 @@
   "author": "emarschner@gmail.com",
   "license": "ISC",
   "bin": "index.js",
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/emarschner/node2umd"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emarschner/node2umd"
   }
 }
