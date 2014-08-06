@@ -6,8 +6,6 @@ It will convert your [Node.js-style module](http://nodejs.org/api/modules.html) 
 
 `npm install node2umd [-g]`
 
-(if you didn't know: the optional `-g` is for if you just want to be able to run `node2umd` anywhere via your shell)
-
 # Usage & API
 
 `node2umd my-node-module.js > my-node-module.umd.js`
@@ -24,7 +22,7 @@ node2umd('my-node-module.js');
 
 Its function signature is:
 
-## node2umd(_input_, [ { output: _output_} ])
+## node2umd(_input_, [ { output: _output_ } ])
 
 *	**_input_** can be either a string -- in which case it's treated as the path to the module file you want to convert -- or a [`stream.Readable`](http://nodejs.org/api/stream.html#stream_class_stream_readable).
 *	**_output_** (optional, default: `process.stdout`) should be a [`stream.Writeable`](http://nodejs.org/api/stream.html#stream_class_stream_writable)

@@ -13,12 +13,14 @@ function node2umd(input, options) {
   }));
 
   reader.on('end', function() {
-    output.write(fs.readFileSync(__dirname + '/postfix.frag', {
+    var method = output !== process.stdout ? 'end' : 'write';
+
+    output[method](fs.readFileSync(__dirname + '/postfix.frag', {
       encoding: 'utf8'
     }));
   });
 
-  reader.pipe(output);
+  reader.pipe(output, { end: false });
 }
 
 if (require.main === module && process.argv[2] !== undefined) {
